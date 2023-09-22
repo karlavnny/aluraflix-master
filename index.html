@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Primary Meta Tags -->
+  
+  <title>Aluraflix - Dia 5</title>
+  <meta name="title" content="Aluraflix - Dia 5">
+  <meta name="description" content="Adicione e remova filmes!">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/ea1ca186af.js" crossorigin="anonymous"></script>
+  
+  
+</head>
+
+  
+</body>
+</html>
+
+
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <img src="assets/img/worldanime.png" alt="Aluraflix logo" id="start">
+      <a href="#start">Início</a>
+      <a href="#series">Series</a>
+      <a href="#movies-section">Peliculas</a>
+      <a href="#my-list">Mi lista</a>
+
+    </div>
+    <div class="user-account">
+
+      <i class="fas fa-search"></i>
+      <p>Infantil</p>
+      <i class="fas fa-bell"></i>
+
+      <img src="assets/img/foto de perfil alura.jpg" alt="User Icon">
+    </div>
+  </nav>
+  <section class="featured-movie">
+    <div class="dark-gradient"></div>
+    <video autoplay loop class="demon-trailer" id="movie-trailer">
+      <source src="assets/video/sailor.mp4">
+    </video>
+    <div class="trailer-about">
+      <div class="trailer-logo">
+        <img src="assets/img/Sailor-Moon-Logo.png" alt="Logo do trailer">
+      </div>
+      <p class="genre">Animación • Acción • Aventura • Fantasia</p>
+      <div class="description-trailer">
+        <p>La historia se centra en las aventuras de una adolescente llamada Usagi Tsukino, quien se transforma en una poderosa guerrera conocida como Sailor Moon y lucha contra aquellos que buscan destruir el Sistema Solar.</p>
+        
+      </div>
+      <div class="buttons-trailer">
+       <a href="https://www.youtube.com/watch?v=jaobOlEuwW4&ab_channel=BWBRANDONMAS"> <button class="btn-play"><i class="fas fa-play"></i>Mirar</button></a>
+        <button class="btn-more-information"><i class="fas fa-info-circle"></i>Mas información</button>
+        
+      </div>
+    </div>
+
+  </section>
+  <section class="series" id="series">
+    <div class="items-wrapper">
+      <h2 class="recomendation">Series:</h2>
+      <div class="items" id="items-series">
+      </div>
+    </div>
+  </section>
+  <section id="movies-section">
+    <div class="items-wrapper">
+      <h2 class="recomendation">Peliculas:</h2>
+      <div class="items" id="items-movies">
+        
+      </div>
+    </div>
+  </section>
+  <section id="my-list">
+    <div class="items-wrapper">
+      <h2 class="recomendation">Mi lista:</h2>
+      <div id="user-movies" class="user-movies">
+
+      </div>
+    </div>
+  </section>
+  <div class="form-wrapper">
+    <input type="text" id="filme" name="filme" placeholder="Introduzca la dirección de la imagen">
+    <button onClick="addMovie()">Agregar Pelicula</button>
+    <button onClick="removeMovie()">Eliminar Pelicula</button>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+  <script src="js/script.js"></script>
+</body>
+
+
+</html>
