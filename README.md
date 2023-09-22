@@ -1,8 +1,5 @@
 
-# aluraportafolio
+# aluraflix
 
 
-<a href="# aluraportafolio
-
-
-<a href="">Visualiza mi repositorio</a>
+<a href="https://karlavnny.github.io/aluraflix-master/">Visualiza mi repositorio</a>
